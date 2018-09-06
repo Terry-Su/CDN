@@ -60,7 +60,6 @@ function addIframe() {
         tsHtml,
         tsCss,
         tsJavascript,
-        BASIC_IFRAME_URL
       }
       iframe.contentWindow.postMessage( data, "*" )
     }
