@@ -3,7 +3,6 @@ const FETCH_SCRIPT_URL = "https://terry-su.github.io/CDN/utils/fetch.js"
 const CODE_VIEWER_IFRAME_URL = "https://terry-su.github.io/CDN/CodeViewer/index.html"
 /* === Config === */
 
-
 const HTML_URL = "./template.html"
 const CSS_URL = "./index.css"
 const JAVASCRIPT_URL = "./index.js"
@@ -21,6 +20,7 @@ function init() {
 function main() {
   iframe = addIframe()
 }
+
 
 function addIframe() {
   const iframe = document.createElement( "iframe" )
@@ -70,7 +70,7 @@ function getStyleText() {
   let { width , height } = getUrlParameters()
   width = notNil( width ) ? width : '100%'
   height = notNil( height ) ? height : '100%'
-  return `html,body,iframe{ width:${width};height:${ height };margin:0;padding:0; overflow: hidden; } iframe{width:100%;height:100%;border:none;}`
+  return `html,body{ width:${width};height:${ height };margin:0;padding:0;} iframe{display:block;width:100%;height:100%;}`
 }
 
 function getUrlParameters() {
