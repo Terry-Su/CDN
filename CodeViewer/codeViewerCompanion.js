@@ -8,11 +8,6 @@ const CSS_URL = "./index.css"
 const JAVASCRIPT_URL = "./index.js"
 
 
-const HTML_URL = "./template.html"
-const CSS_URL = "./index.css"
-const JAVASCRIPT_URL = "./index.js"
-
-
 init()
 
 /* Bussiness Logic */
