@@ -1,7 +1,8 @@
 /* === Config  === */
 const FETCH_SCRIPT_URL = "https://terry-su.github.io/CDN/utils/fetch.js"
-const CODE_VIEWER_IFRAME_URL = "https://terry-su.github.io/CDN/CodeViewer/index.html"
+const CODE_VIEWER_IFRAME_URL = "/CDN/CodeViewer/index.html"
 /* === Config === */
+
 
 const HTML_URL = "./template.html"
 const CSS_URL = "./index.css"
