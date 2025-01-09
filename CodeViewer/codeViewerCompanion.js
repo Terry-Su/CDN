@@ -1,6 +1,6 @@
 /* === Config  === */
 const FETCH_SCRIPT_URL = "https://terry-su.github.io/CDN/utils/fetch.js"
-const CODE_VIEWER_IFRAME_URL = "https://terry-su.github.io/CDN/CodeViewer/index.html"
+const CODE_VIEWER_IFRAME_URL = "/index.html"
 /* === Config === */
 
 
@@ -86,10 +86,13 @@ function getUrlParameters() {
 function fetchText( url ) {
   return fetch( url ).then( function( response ) {
     try {
-      return response.text()
+      const status = response.status
+      return status === 200 ? response.text() : null
     } catch ( e ) {
       return null
     }
+  } ).catch( function( e ) {
+    return null
   } )
 }
 
